@@ -1,0 +1,51 @@
+/* Style for the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Vibrant aside section */
+aside {
+  width: 20rem;
+  margin: 1rem auto;
+  border: 2px solid rgb(255 105 180 / 0.6); /* Hot pink, semi-transparent */
+  padding: 1rem;
+  background-color: #ffe066;  /* Bright yellow */
+  color: #1e3d59;             /* Deep blue text for contrast */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Image inside aside */
+aside img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #ff6f61; /* Coral border */
+}
+
+/* Style for the profile image inside main */
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #28a745; /* Vibrant green */
+}
+
+/* Reset padding for all paragraphs */
+p {
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* Vibrant footer styling */
+footer {
+  margin-top: 15px;
+  border-top: 3px dashed #ff69b4; /* Hot pink dashed border */
+  text-align: center;
+  background-color: #20c997;  /* Vibrant teal */
+  color: #ffffff;             /* White text */
+  padding: 1rem;
+  font-weight: bold;
+}
