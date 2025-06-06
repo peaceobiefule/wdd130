@@ -1,4 +1,4 @@
-/* Root color and font variables */
+/* Root color and font variables */ 
 :root {
   --primary-color: #628BFF;
   --secondary-color: #009147;
@@ -32,6 +32,15 @@ header, main, footer {
   margin: 0 auto;
 }
 
+/* Header Grid Layout */
+.header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
 /* Logo */
 .logo {
   width: 100px;
@@ -47,9 +56,16 @@ nav {
   margin: 10px 0;
 }
 
+.main-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 nav a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #003366; /* Darker color for better contrast */
   font-weight: bold;
   font-family: var(--heading-font);
 }
@@ -70,8 +86,8 @@ nav a {
   top: 20px;
   width: 100%;
   text-align: center;
-  background-color: rgba(98, 139, 255, 0.8); /* primary color */
-  color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* Improved contrast */
+  color: #ffffff;
   font-family: var(--heading-font);
   font-size: 2rem;
   padding: 12px;
@@ -81,22 +97,26 @@ nav a {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 16px;
-  max-width: 360px;
+  background-color: rgba(255, 255, 255, 0.98); /* Stronger white */
+  color: #000;
+  padding: 12px;
+  max-width: 480px;
+  min-height: 140px;
   border: 2px solid var(--secondary-color);
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
+  align-items: center;
+  gap: 14px;
 }
 
-/* Floated image */
+/* Image inside the article box */
 .hero article img {
-  float: right;
-  width: 120px;
-  margin-left: 10px;
+  width: 110px;
+  height: auto;
+  border-radius: 6px;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 /* Section styling */
@@ -166,3 +186,104 @@ h1, h2, h3, p, nav a, footer, article {
   font-weight: bold;
 }
 
+/* ---------------------------------- */
+/*          CONTACT.HTML STYLES      */
+/* ---------------------------------- */
+
+.contact-info,
+.employee-profiles,
+.contact-form {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Embedded Map */
+.map-container {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Employee Profiles */
+.employee-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.employee-profiles figure {
+  width: 200px;
+}
+
+.employee-profiles img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contact Form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  font-family: var(--text-font);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.radio-group label {
+  display: block;
+  font-weight: normal;
+  margin-left: 1rem;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}

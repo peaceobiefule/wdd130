@@ -11,12 +11,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Arimo&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .hero article {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .hero article img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 8px;
+    }
+
+    /* Flex row for five images, no wrapping */
+    .adventure-gallery {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 1rem;
+      justify-content: space-between;
+      overflow-x: auto;
+      padding: 1rem;
+    }
+
+    .adventure-gallery figure {
+      flex: 0 0 auto;
+      width: 18%;
+      text-align: center;
+    }
+
+    .adventure-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .socialmedia {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .socialmedia img {
+      width: 32px;
+      height: 32px;
+    }
+  </style>
 </head>
 <body>
-  <!--  Header with logo and nav -->
-  <header>
+  <!-- Header -->
+  <header class="header-grid">
     <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
-    <nav>
+    <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
@@ -24,7 +72,7 @@
     </nav>
   </header>
 
-  <!-- Main content with hero and sections -->
+  <!-- Main Content -->
   <main>
     <div class="hero">
       <img src="images/hero.jpeg" alt="Rafting Adventure Background">
@@ -35,13 +83,13 @@
       </article>
     </div>
 
-    <!--  Section 1: History -->
+    <!-- History Section -->
     <section>
       <h2>History</h2>
       <p>Founded in 1999, White Rapids Adventures has been exploring rivers and guiding thrill-seekers across the wildest waters in the region. Our roots are in community, nature, and courage.</p>
     </section>
 
-    <!--  Section 2: Adventure -->
+    <!-- Adventure Section -->
     <section>
       <h2>Adventure Awaits You!</h2>
       <div class="adventure-gallery">
@@ -69,7 +117,7 @@
     </section>
   </main>
 
-  <!--  Footer -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 White Rapids Adventures | Peace</p>
     <nav class="socialmedia">
@@ -86,4 +134,3 @@
   </footer>
 </body>
 </html>
-
