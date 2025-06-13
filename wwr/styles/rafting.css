@@ -287,3 +287,215 @@ h1, h2, h3, p, nav a, footer, article {
 .contact-form button[type="submit"]:hover {
   background-color: var(--secondary-color);
 }
+
+.newsletter {
+  background-color: #e0f7fa;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.newsletter button {
+  padding: 0.8rem;
+  background-color: #00796b;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #004d40;
+}
+
+/* Spacing for the hero image */
+.hero-img {
+  margin: 20px auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Spacing and layout for grid-content images */
+.grid-content .grid-item img {
+  margin: 15px auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Add spacing inside the grid items for text and images */
+.grid-content .grid-item {
+  padding: 10px;
+  background-color: #ffffff; /* optional background for contrast */
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Trip Highlights Grid */
+.trip-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.trip {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Table Section */
+.trip-table {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.trip-table h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid #ccc;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.trip-table thead {
+  background-color: #0088cc;
+  color: white;
+}
+
+.trip-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Call-to-Action Section */
+.cta-contact {
+  background-color: #0088cc;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.cta-contact h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: white;
+  color: #0088cc;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Adding spacing around trip images only */
+.trip img {
+  margin: 0 auto 1rem auto;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 600px) {
+  .trip-table table {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
